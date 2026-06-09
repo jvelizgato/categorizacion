@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formalización de IPRESS - Lambayeque</title>
+    <style>
+        :root {
+            --primary: #0f4c81;
+            --secondary: #2d9cdb;
+            --success: #27ae60;
+            --dark: #333333;
+            --light: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--success);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .intro-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--secondary);
+        }
+
+        .section-title {
+            color: var(--primary);
+            margin: 30px 0 15px 0;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grid-procedimientos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .badge {
+            background-color: #e1f5fe;
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .card ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card ol li {
+            margin-bottom: 8px;
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--success);
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background 0.3s;
+            margin-top: 5px;
+        }
+
+        .btn-download:hover {
+            background-color: #219653;
+        }
+
+        .btn-link {
+            background-color: var(--secondary);
+        }
+
+        .btn-link:hover {
+            background-color: #1a7bb7;
+        }
+
+        .info-footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsivo para celulares */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6rem; }
+            .grid-procedimientos { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guía de Formalización IPRESS 🏥</h1>
+        <p>Unidad Funcional de Servicios de Salud (GERESA) - Lambayeque</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro-card">
+            <h2>¿Cómo iniciar el funcionamiento?</h2>
+            <p>La apertura y formalización de un Establecimiento de Salud o Servicio Médico de Apoyo se encuentra regulada por el D.S. N°013-2006-SA. Para facilitar el proceso, se realiza a través de <strong>3 procedimientos administrativos</strong> principales.</p>
+        </div>
+
+        <h2 class="section-title">📋 Procedimientos de Formalización</h2>
+        
+        <div class="grid-procedimientos">
+            
+            <div class="card">
+                <div>
+                    <span class="badge">Paso 1: Obligatorio Inicial</span>
+                    <h3>1. Inicio de Actividades</h3>
+                    <p style="font-size:0.9rem; color:#666; margin-bottom:10px;">Vigencia: Hasta 30 días una vez iniciadas las actividades.</p>
+                    <ol>
+                        <li>Comunica el inicio mediante una Declaración Jurada.</li>
+                        <li>Preséntala por Mesa de Partes de la GERESA.</li>
+                        <li>Recibirás una Constancia de recepción en tu correo.</li>
+                    </ol>
+                </div>
+                <a href="https://drive.google.com/drive/folders/11Co_gyNWHOqPZhpipnsXp0F60WDHGEeX?usp=drive_link" target="_blank" class="btn-download">📥 Descargar Formato 1-DJ</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="badge">Paso 2: Plazo max. 90 días</span>
+                    <h3>2. Categorización</h3>
+                    <p style="font-size:0.9rem; color:#666; margin-bottom:10px;">Se realiza cada 3 años obligatoriamente.</p>
+                    <ol>
+                        <li>Solicitud de Categorización firmada.</li>
+                        <li>Registro en la Web de IPRESS (Ficha impresa).</li>
+                        <li>Copia simple del Plan Médico Funcional.</li>
+                        <li>Certificado de Defensa Civil y Compatibilidad de Uso.</li>
+                        <li>Pago por derecho de trámite en Tesorería.</li>
+                    </ol>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    <a href="https://drive.google.com/drive/folders/11Co_gyNWHOqPZhpipnsXp0F60WDHGEeX?usp=drive_link" target="_blank" class="btn-download">📥 2-Formato-sol-categorizacion-PROG-MED-FUNC</a>
+                    <a href="https://app20.susalud.gob.pe:8083/wb-renipress/inicio.htm" target="_blank" class="btn-download btn-link">🌐 Registrarse en Web IPRESS</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="badge">Actualización</span>
+                    <h3>3. Re-categorización</h3>
+                    <p style="font-size:0.9rem; color:#666; margin-bottom:10px;">Proceso para determinar una nueva categoría.</p>
+                    <ol>
+                        <li>Solicitud de Re-categorización.</li>
+                        <li>Ficha de Re-categorización Web actualizada.</li>
+                        <li>Copia del Plan Médico Funcional (visado).</li>
+                        <li>Copia de Licencia de Funcionamiento.</li>
+                        <li>Comprobante de depósito por trámite.</li>
+                    </ol>
+                </div>
+                <a href="https://drive.google.com/drive/folders/11Co_gyNWHOqPZhpipnsXp0F60WDHGEeX?usp=drive_link" target="_blank" class="btn-download">📥 3-Formato-solicitud-de-re-categorizacion</a>
+                <a href="https://app20.susalud.gob.pe:8083/wb-renipress/inicio.htm" target="_blank" class="btn-download">📥 Actualice la Información de su establecimiento</a>
+                 <a href="https://drive.google.com/drive/folders/11Co_gyNWHOqPZhpipnsXp0F60WDHGEeX?usp=drive_link" target="_blank" class="btn-download">📥 Formato de plan medico funcional</a>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">📞 Soporte y Consultas</h2>
+        <div class="intro-card" style="border-left-color: var(--success); text-align: center;">
+            <p>¿Tienes dudas con el proceso de verificación o los formatos por niveles (I, II, III)?</p>
+            <p style="margin-top: 10px;"><strong>Correo electrónico de contacto:</strong></p>
+            <a href="mailto:verificacion.categorizacion@gmail.com" style="color: var(--primary); font-weight: bold; font-size: 1.1rem;">verificacion.categorizacion@gmail.com</a>
+        </div>
+
+    </div>
+
+    <div class="info-footer">
+        <p>Esta es una plataforma informativa adaptada para múltiples dispositivos. Modalidad de trámite: Presencial.</p>
+    </div>
+
+</body>
+</html>
